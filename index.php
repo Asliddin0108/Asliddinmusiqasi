@@ -1,9 +1,11 @@
 <?php
 ob_start();
+http_response_code(200);
 
 // Asosiy sozlamalar
-define('API_KEY', '8253736025:AAHmMPac7DmA_fi01urRtI0wwAfd7SAYArE');
-define('ADMIN_ID', '8238730404'); // Asosiy admin ID
+define('API_KEY', getenv('8253736025:AAHmMPac7DmA_fi01urRtI0wwAfd7SAYArE'));
+define('ADMIN_ID', getenv('8238730404'));
+
 
 // Fayl yo'llari
 $DIR_STAT = __DIR__ . '/stat';
